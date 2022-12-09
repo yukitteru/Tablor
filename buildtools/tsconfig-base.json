@@ -1,17 +1,35 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2021",
     "module": "commonjs",
-    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": false,
     "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "skipLibCheck": true,
     "sourceMap": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true,
     "baseUrl": "..",
+    "rootDir": "..",
+    "outDir": "../_build",
+    "paths": {
+      "*": [
+        "*",
+        "Tablor/*",
+        "stubs/*",
+        "ext/*"
+      ],
+    },
     "composite": true,
+    "types" : [],
     "plugins": [{
-      "name": "typescript-tslint-plugin"
+      "name": "typescript-eslint-language-service"
     }],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

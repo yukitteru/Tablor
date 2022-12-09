@@ -20,7 +20,7 @@
  * At the moment, flexbox width resizing is the only need, but the same approach is intended to be
  * easily extended to non-flexbox situation, and to height-resizing.
  */
-import {mouseDrag} from 'app/client/ui/mouseDrag';
+import {mouseDrag} from './mouseDrag';
 import {DomElementArg, styled} from "grainjs";
 
 export type ChangeFunc = (value: number) => void;

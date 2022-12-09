@@ -1,8 +1,5 @@
 {
     "extends": "../../buildtools/tsconfig-base.json",
-    "compilerOptions": {
-        "outDir": "../../build/app/server",
-    },
     "references": [
         { "path": "../common" }
     ]
