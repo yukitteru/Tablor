@@ -2,11 +2,11 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "strict": true,
+    "strict": false,
     "strictPropertyInitialization": false,
     "sourceMap": true,
     "noImplicitAny": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "moduleResolution": "node",
     "baseUrl": "..",
     "composite": true,
