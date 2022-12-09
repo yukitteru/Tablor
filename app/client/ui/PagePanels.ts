@@ -1,10 +1,10 @@
 /**
  * Note that it assumes the presence of cssVars.cssRootVars on <body>.
  */
-import {resizeFlexVHandle} from 'app/client/ui/resizeHandle';
-import {transition} from 'app/client/ui/transitions';
-import {colors} from 'app/client/ui_old/cssVars';
-import {icon} from 'app/client/ui_old/icons';
+import {resizeFlexVHandle} from './resizeHandle';
+import {transition} from './transitions';
+import {colors} from '../ui_old/cssVars';
+import {icon} from '../ui_old/icons';
 import {dom, DomArg, noTestId, Observable, styled, TestId} from "grainjs";
 
 export interface PageSidePanel {

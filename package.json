@@ -4,10 +4,10 @@
   "description": "Simple Table Data Editor",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --fix",
-    "start": "tsc --build app -w --preserveWatchOutput & webpack --config buildtools/webpack.config.js --mode development --watch --hide-modules & nodemon -w build/app/server -w build/app/common build/app/server/server & wait",
+    "lint": "eslint . --ext .ts",
+    "start": "tsc --build -w --preserveWatchOutput & webpack --config buildtools/webpack.config.js --mode development --watch --hide-modules & nodemon -w _build/app/server -w _build/app/common _build/app/server/server & wait",
     "build:prod": "tsc --build app && webpack --config buildtools/webpack.config.js --mode production",
-    "start:prod": "node build/app/server/server"
+    "start:prod": "node _build/app/server/server"
   },
   "keywords": [],
   "author": "Yukitteru",
@@ -17,7 +17,6 @@
     "@types/node": "10",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
-    "eslint": "^8.29.0",
     "moment-locales-webpack-plugin": "^1.2.0",
     "nodemon": "^2.0.4",
     "source-map-loader": "^0.2.4",

@@ -6,7 +6,7 @@
  *  https://css-tricks.com/snippets/css/system-font-stack/
  *
  */
-import {ProductFlavor} from 'app/common/tablorUrls';
+import {ProductFlavor} from '../../common/tablorUrls';
 import {dom, makeTestId, styled, TestId} from 'grainjs';
 import values = require('lodash/values');
 
